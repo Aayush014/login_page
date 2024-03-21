@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_page/mobile_login.dart';
+import 'package:login_page/spotify_login.dart';
 import 'package:login_page/web_login.dart';
 
 void main() {
@@ -16,9 +17,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MobileLogin(),
+      home: Spotify_login(),
     );
   }
 }

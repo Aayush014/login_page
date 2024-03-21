@@ -105,7 +105,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                               ),
                             ),
                           ),
-                          TextField(
+                          const TextField(
                             decoration: InputDecoration(
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.all(
@@ -137,16 +137,16 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                           ),
                           TextField(
                             decoration: InputDecoration(
-                              border: OutlineInputBorder(
+                              border: const OutlineInputBorder(
                                 borderRadius: BorderRadius.all(
                                   Radius.circular(20),
                                 ),
                               ),
-                              enabledBorder: OutlineInputBorder(
+                              enabledBorder: const OutlineInputBorder(
                                 borderSide: BorderSide(
                                     color: Color(0xFFB8D5BF), width: 2),
                               ),
-                              focusedBorder: OutlineInputBorder(
+                              focusedBorder: const OutlineInputBorder(
                                 borderSide: BorderSide(
                                     color: Color(0xFFB8D5BF), width: 2),
                               ),
@@ -161,17 +161,17 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                   });
                                 },
                                 icon: (pass)
-                                    ? Icon(
+                                    ? const Icon(
                                         CupertinoIcons.eye_fill,
                                         color: Color(0xFFB8D5BF),
                                       )
-                                    : Icon(
+                                    : const Icon(
                                         CupertinoIcons.eye_slash_fill,
                                         color: Color(0xFFB8D5BF),
                                       ),
                               ),
                             ),
-                            cursorColor: Color(0xFFB8D5BF),
+                            cursorColor: const Color(0xFFB8D5BF),
                             obscureText: pass,
                             obscuringCharacter: "*",
                           ),
@@ -196,7 +196,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                     },
                                     activeColor: Colors.green,
                                   ),
-                                  Text(
+                                  const Text(
                                     'Remember me',
                                     style: TextStyle(
                                       color: Color(0xFF355B3E),
@@ -211,7 +211,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                 'Forgot password?',
                                 textAlign: TextAlign.right,
                                 style: GoogleFonts.inter(
-                                  color: Color(0xFF355B3E),
+                                  color: const Color(0xFF355B3E),
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
                                   decoration: TextDecoration.underline,
@@ -231,11 +231,11 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                 height: 48,
                                 padding: const EdgeInsets.all(16),
                                 decoration: ShapeDecoration(
-                                  color: Color(0xFF029664),
+                                  color: const Color(0xFF029664),
                                   shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(8)),
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -264,12 +264,12 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                 padding: const EdgeInsets.all(16),
                                 decoration: ShapeDecoration(
                                   shape: RoundedRectangleBorder(
-                                    side: BorderSide(
+                                    side: const BorderSide(
                                         width: 1, color: Color(0xFF029664)),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -297,7 +297,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                           SizedBox(
                             height: height / 15,
                           ),
-                          Container(
+                          SizedBox(
                             width: 372,
                             height: 16,
                             child: Row(
@@ -308,7 +308,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                 Text(
                                   'Or, login with',
                                   style: GoogleFonts.inter(
-                                    color: Color(0xFF58745E),
+                                    color: const Color(0xFF58745E),
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
                                   ),
@@ -317,7 +317,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                 Text(
                                   'Facebook',
                                   style: GoogleFonts.inter(
-                                    color: Color(0xFF355B3E),
+                                    color: const Color(0xFF355B3E),
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -326,7 +326,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                 Text(
                                   'Linked In',
                                   style: GoogleFonts.inter(
-                                    color: Color(0xFF355B3E),
+                                    color: const Color(0xFF355B3E),
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -335,7 +335,7 @@ class _WebSiteLoginState extends State<WebSiteLogin> {
                                 Text(
                                   'Google',
                                   style: GoogleFonts.inter(
-                                    color: Color(0xFF355B3E),
+                                    color: const Color(0xFF355B3E),
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
                                   ),
